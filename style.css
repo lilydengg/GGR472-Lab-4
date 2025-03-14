@@ -6,3 +6,56 @@
     right: 0;
     width: 100%;
 }
+.map-data-container { /*style the panel for map filters and controls*/
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    width: 260px;
+    top: 0;
+    left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: visible;
+}
+.legend {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+/* Special styling for the cycling network as the words were touching the line*/
+.legend-line {
+    width: 30px;   /* Make it look more like a line */
+    height: 4px;   /* Thinner like a line */
+    margin-right: 10px;  /* Extra spacing */
+    display: inline-block; /* Keeps it aligned properly */
+}
+.legend-color {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border: 1px solid #000;
+}
+.option-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjust space below the title */
+    font-size: 16px;
+}
+
+.controls {
+    margin-top: 15px; /* Adjust space between the title and checkboxes */
+}
